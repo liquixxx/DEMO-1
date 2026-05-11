@@ -1,1 +1,258 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI-система онбординга для кофейных сетей</title>
+  <style>
+    :root {
+      --bg: #0f1115;
+      --card: #171a21;
+      --text: #f2f4f8;
+      --muted: #b7bfcc;
+      --accent: #6ee7b7;
+      --accent-2: #34d399;
+      --border: #262b36;
+    }
 
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(180deg, #0d0f14 0%, #111521 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      width: min(1080px, 92%);
+      margin: 0 auto;
+    }
+
+    section { padding: 64px 0; }
+
+    .hero { padding: 92px 0 72px; }
+
+    h1, h2, h3 { line-height: 1.2; margin-top: 0; }
+    h1 { font-size: clamp(2rem, 4vw, 3.4rem); margin-bottom: 24px; }
+    h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); margin-bottom: 18px; }
+    h3 { font-size: clamp(1.1rem, 2vw, 1.4rem); margin-bottom: 12px; color: var(--accent); }
+
+    .lead { font-size: clamp(1.05rem, 1.4vw, 1.25rem); color: var(--muted); max-width: 820px; }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 14px;
+      margin-top: 26px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px;
+    }
+
+    ul { padding-left: 20px; margin: 10px 0 0; }
+
+    .cta {
+      margin-top: 28px;
+      display: inline-block;
+      text-decoration: none;
+      color: #0b0f14;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      padding: 14px 22px;
+      border-radius: 12px;
+      font-weight: 700;
+    }
+
+    .muted { color: var(--muted); }
+
+    .split {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .metric {
+      padding: 18px;
+      border-radius: 14px;
+      background: #131722;
+      border: 1px solid var(--border);
+    }
+
+    .final {
+      text-align: center;
+      padding: 82px 0;
+      border-top: 1px solid var(--border);
+      margin-top: 18px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>AI-система онбординга для кофейных сетей</h1>
+        <h2>Сократите время адаптации.<br>Выводите бариста на рабочий уровень быстрее.</h2>
+        <p class="lead">Ваши менеджеры не должны тратить недели на повторение одних и тех же инструкций. Мы создаём AI-ассистентов, обученных на вашей базе знаний: рецепты, стандарты, скрипты, SOP, процедуры открытия и закрытия, руководства по оборудованию и внутренние регламенты. Новые сотрудники получают ответы мгновенно — прямо во время смены.</p>
+
+        <h3>Что получает ваша кофейня на практике</h3>
+        <div class="card-grid">
+          <div class="card">Более быстрый онбординг новых сотрудников</div>
+          <div class="card">Снижение нагрузки на менеджеров и старших бариста</div>
+          <div class="card">Меньше ошибок и более стабильное качество между локациями</div>
+          <div class="card">Более быстрый запуск новых кофеен и меньше хаоса в адаптации</div>
+          <div class="card">Снижение зависимости от «знаний в головах» конкретных людей</div>
+          <div class="card">Сотрудники выходят на продуктивный уровень раньше</div>
+        </div>
+
+        <a href="#contact" class="cta">Записаться на демо</a>
+        <p class="muted">Посмотрите, как AI-ассистент работает на реальных данных вашей кофейни.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Проблема: каждый новый сотрудник стоит менеджеру времени</h2>
+        <ul>
+          <li>Менеджеры ежедневно отвечают на одинаковые вопросы.</li>
+          <li>Стандарты есть, но их редко изучают целиком.</li>
+          <li>Сотрудники боятся задавать вопросы в час пик.</li>
+          <li>Знания разбросаны по Telegram, Notion, PDF и чатам.</li>
+          <li>Качество адаптации зависит от конкретных людей.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Решение: один AI-ассистент вместо сотен повторных объяснений</h2>
+        <p class="lead">Мы создаём внутреннего AI-ассистента на ваших операционных знаниях. Сотрудники получают ответы 24/7: как готовить напиток, как закрыть смену, что делать при поломке оборудования, как работает возврат, лояльность и стандарты общения с гостями.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Как это работает</h2>
+        <div class="split">
+          <div class="card">
+            <h3>1. Сбор базы знаний</h3>
+            <ul>
+              <li>SOP, Notion, Google Docs</li>
+              <li>PDF, рецепты, чек-листы, обучающие материалы</li>
+              <li>Внутренние инструкции и документация из Telegram</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>2. Создание AI-системы</h3>
+            <ul>
+              <li>Ассистент понимает вашу терминологию и стандарты</li>
+              <li>Учитывает рабочие процессы, продукты и операционные правила</li>
+              <li>Это не «общий AI», а система под вашу сеть</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>3. Использование в смене</h3>
+            <ul>
+              <li>Доступ с телефона, Telegram, планшета и компьютера</li>
+              <li>Ассистент — первая точка контакта по операционным вопросам</li>
+              <li>Менеджеры фокусируются на управлении, а не на повторениях</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Вы покупаете не «AI», а результат</h2>
+        <div class="card-grid">
+          <div class="card">Быстрая адаптация сотрудников</div>
+          <div class="card">Операционная масштабируемость</div>
+          <div class="card">Меньше управленческих узких мест</div>
+          <div class="card">Единые стандарты на всех локациях</div>
+          <div class="card">Снижение затрат на онбординг</div>
+          <div class="card">Быстрый выход новых точек на прибыльность</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Кейсы использования</h2>
+        <div class="split">
+          <div class="card">
+            <h3>Для бариста</h3>
+            <ul>
+              <li>Рецепты и стандарты</li>
+              <li>Вопросы по смене</li>
+              <li>Операционные инструкции</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Для менеджеров</h3>
+            <ul>
+              <li>Снижение повторяющихся коммуникаций</li>
+              <li>Простой контроль онбординга</li>
+              <li>Централизованные знания</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Для франчайзинговых сетей</h3>
+            <ul>
+              <li>Единые стандарты между локациями</li>
+              <li>Масштабируемый онбординг</li>
+              <li>Быстрое расширение сети</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Что меняется после внедрения</h2>
+        <div class="split">
+          <div class="metric">
+            <h3>До</h3>
+            <ul>
+              <li>Менеджеры постоянно отвечают на повторяющиеся вопросы</li>
+              <li>Адаптация зависит от старших сотрудников</li>
+              <li>Информация теряется, сотрудники учатся медленно</li>
+              <li>Разные локации работают по-разному</li>
+            </ul>
+          </div>
+          <div class="metric">
+            <h3>После</h3>
+            <ul>
+              <li>Сотрудники находят ответы мгновенно</li>
+              <li>Знания централизованы и доступны в моменте</li>
+              <li>Стандарты становятся единообразными</li>
+              <li>Менеджеры сосредоточены на операциях, а не на объяснениях</li>
+              <li>Новые сотрудники выходят на рабочий уровень быстрее</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Почему именно кофейные сети</h2>
+        <p class="lead">В кофейнях высокая текучесть, быстрый темп и жёсткие стандарты. Универсальные корпоративные AI-инструменты редко решают операционные задачи смены. Мы проектируем систему именно для кофейной операционки и масштабирования сети без масштабирования хаоса.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="final">
+      <div class="container">
+        <h2>Создайте AI-систему управления знаниями для вашей кофейной сети</h2>
+        <p class="lead">Сократите время онбординга. Снизьте нагрузку на менеджмент. Масштабируйте точки уверенно и быстро.</p>
+        <a href="#" class="cta">Записаться на стратегический звонок</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
